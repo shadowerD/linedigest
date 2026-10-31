@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私權政策｜LINE 會議摘要</title>
+<style>
+  :root { --bg: #fff; --fg: #1d1d1f; --muted: #6e6e73; --link: #0a66c2; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161618; --fg: #f2f2f2; --muted: #a1a1a6; --link: #6cb4ff; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+         max-width: 680px; margin: 0 auto; padding: 40px 16px; }
+  h1 { font-size: 1.6rem; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 1.8rem 0 .4rem; }
+  p.muted { color: var(--muted); }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<h1>隱私權政策</h1>
+<p class="muted">LINE 會議摘要．最後更新：2026 年 11 月 1 日</p>
+
+<h2>適用範圍</h2>
+<p>LINE 會議摘要是個人自用工具，只有擁有者本人使用，不對外提供服務，也沒有其他使用者。</p>
+
+<h2>讀取哪些資料</h2>
+<ul>
+  <li><b>LINE 訊息</b>：擁有者本人 LINE 帳號裡的聊天訊息（擁有者設定排除的聊天室與官方帳號除外），用來找出約定的會議與行程。</li>
+  <li><b>Google 日曆</b>：只使用 <code>calendar.app.created</code> 權限，也就是只能讀寫本工具自己建立的子行事曆「LINE 擷取」。本工具看不到、也不能修改擁有者的其他行事曆。</li>
+</ul>
+
+<h2>資料怎麼處理與存放</h2>
+<ul>
+  <li>程式在擁有者自己的電腦上執行，訊息與判斷結果存在那台電腦的本機資料庫，保留 90 天後自動刪除。</li>
+  <li>判斷行程主要使用同一台電腦上的地端 AI 模型，訊息不會離開這台電腦。</li>
+  <li>地端模型無法使用時，該段對話會透過 API 送到 Anthropic（Claude）判斷行程，依 Anthropic 的商業服務條款處理，不會被用來訓練模型。</li>
+  <li>寫進「LINE 擷取」行事曆的只有行程標題、時間、地點與一句摘要，不含訊息原文。</li>
+  <li>登入憑證以加密方式存放在擁有者電腦的系統保管區（macOS 鑰匙圈）。</li>
+</ul>
+
+<h2>分享</h2>
+<p>本工具不會出售、出租或分享任何資料給第三方，也不用於廣告。除上述 AI 判斷外，不會把資料傳送到其他地方。</p>
+<p>本工具使用 Google API 取得的資料，遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服務使用者資料政策</a>，包括其中的「有限使用」規定。</p>
+
+<h2>撤銷授權</h2>
+<p>擁有者可以隨時到 <a href="https://myaccount.google.com/permissions">Google 帳戶的第三方存取權頁面</a> 撤銷本工具的日曆權限；撤銷後本工具無法再讀寫「LINE 擷取」行事曆。</p>
+
+<p><a href="index.html">回首頁</a></p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LINE 會議摘要</title>
+<style>
+  :root { --bg: #fff; --fg: #1d1d1f; --muted: #6e6e73; --link: #0a66c2; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161618; --fg: #f2f2f2; --muted: #a1a1a6; --link: #6cb4ff; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+         max-width: 680px; margin: 0 auto; padding: 40px 16px; }
+  h1 { font-size: 1.6rem; margin: 0 0 .5rem; }
+  p.muted { color: var(--muted); }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<h1>LINE 會議摘要</h1>
+<p class="muted">個人自用工具，不對外提供服務。</p>
+
+<p>這個工具在擁有者自己的電腦上執行：讀取擁有者本人 LINE 帳號裡的聊天訊息，找出約定好的會議與行程，
+登記到擁有者 Google 日曆裡一個由本工具建立的子行事曆「LINE 擷取」，並每天推送一份摘要給擁有者。</p>
+
+<p>本工具只申請 Google 日曆「建立次要行事曆，並管理其中活動」的權限（calendar.app.created），
+看不到也改不了擁有者的其他行事曆。</p>
+
+<p><a href="privacy.html">隱私權政策</a>　·　<a href="terms.html">服務條款</a></p>
+</body>
+</html>
